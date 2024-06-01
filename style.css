@@ -18,10 +18,10 @@
 }
 .carousel-indicators [data-bs-target].active {
     background-color: #030303; /* Active color */
-    box-shadow: 0 0 0 1px #f66d86;
+    box-shadow: 0 0 0 1px #f1474d;
   }
   .highlight-row:hover {
-    background-color: #fd7979; /* Change the background color on hover */
+    background-color: #f1474d; /* Change the background color on hover */
     border-radius: 10px;
   }
 
@@ -49,3 +49,5 @@
     background-color: #f3dada; /* Change the background color on hover */
     border-radius: 10px;
   }
+
+  
