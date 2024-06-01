@@ -1,0 +1,22 @@
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 5px; /* Change width */
+    height: 5px; /* Change height */
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #040404;
+    background-clip: padding-box;
+    border: 5px solid transparent; /* Added border size */
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    opacity: .8;
+    border-radius: 100%; /* Add border-radius */
+}
+.carousel-indicators [data-bs-target].active {
+    background-color: #030303; /* Active color */
+    box-shadow: 0 0 0 1px #ed4b69;
+  }
