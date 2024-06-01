@@ -7,45 +7,71 @@
   <title>Digital Web Services</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMTd1xQzRy5N4UJwAY/R3iCfbOp9KTf2TbEN5c" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">k
 </head>
 
 <body>
   <div id="main_container" class="container d-flex justify-content-center align-items-center vh-100">
     <div class="row align-items-center">
       <div class="col-lg-6 col-md-8 col-sm-12 p-5 text-start">
-        <h5><span>AWARD WINNING</span></h5>
+        <h5><span class="text-danger">AWARD WINNING</span></h5>
         <h1><span>DIGITAL MARKETING AGENCY</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit aspernatur beatae sint incidunt nisi
-          in, nostrum enim assumenda facere dolorem voluptatibus consequuntur illum debitis odit quia qui sunt
-          dolore tempora veniam quos nulla doloremque. Similique exercitationem cupiditate aliquid ipsa.</p>
-        <button class="btn btn-primary">Contact Us</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit aspernatur beatae sint incidunt nisi in,
+          nostrum enim assumenda facere dolorem voluptatibus consequuntur illum debitis odit quia qui sunt dolore
+          tempora veniam quos nulla doloremque. Similique exercitationem cupiditate aliquid ipsa.</p>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
       </div>
       <div class="col-lg-6 col-md-4 col-sm-12 text-center">
         <img src="Images/home_Img.png" alt="Home Page Container Image" class="img-fluid">
       </div>
     </div>
-
   </div>
+
+<!-- Talk to us Modal Structure -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="contactModalLabel">Talk To Us</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="https://getform.io/f/zaxdpdxa" method="POST">
+          <div class="mb-3">
+            <input type="email" class="form-control" id="email" name="email" required placeholder="Working Email*">
+          </div>
+          <div class="mb-3 d-flex">
+            <input type="text" class="form-control m-1" id="firstName" name="firstName" required placeholder="First Name*">
+            <input type="text" class="form-control m-1" id="lastName" name="lastName" required placeholder="Last Name*">
+          </div>
+          <div class="mb-3 m-auto form-check">
+            <input type="checkbox" class="form-check-input border-danger ml-1px" id="exampleCheck1" name="terms">
+            <label class="form-check-label" for="exampleCheck1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, aut nobis cum ipsam debitis deserunt.</label>
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-danger" type="submit">Contact Us</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <div class="container d-flex justify-content-center align-items-center">
     <div class="row align-items-center">
       <div class="col-lg-6 col-md-8 col-sm-12 p-5 text-start ml-3">
-        <h4>WHAT WE DO</h4>
+        <h4 class="text-danger">WHAT WE DO</h4>
         <h2>SERVICE WE PROVIDE FOR YOU</h2>
-
       </div>
-      <div class="col-lg-5 col-md-4 col-sm-12 text-start mt-3 text-start mr-3  ">
-
+      <div class="col-lg-5 col-md-4 col-sm-12 text-start mt-3 text-start mr-3">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repellat ipsa mollitia nobis
           accusantium nesciunt.</p>
-
       </div>
-
-
     </div>
-
-  </div>  
-
+  </div>
 
   <div class="container">
     <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -107,71 +133,143 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-      <div class="row " >
-        <div class="col-1">
-        <div class="  carousel-indicators " style="position: static  ">
-          <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-            aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div class="row justify-content-start mt-2">
+        <div class="col-12">
+          <div class="carousel-indicators d-flex justify-content-start">
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   </div>
+
   <div class="container d-flex justify-content-center align-items-center">
     <div class="row align-items-center">
       <div class="col-lg-12 col-md-12 col-sm-12 p-5 text-center ml-3">
-        <h4>WHY CHOOSE US</h4>
+        <h4 class="text-danger">WHY CHOOSE US</h4>
         <h2>WHY WE ARE BEST</h2>
-
       </div>
-      
-
-      </div>
-      
-      
-
-
     </div>
-    <div class="container d-flex justify-content-center align-items-center">
-      <div class="row align-items-center">
-        <div class="col-lg-3 col-md-3 col-sm-6 p-5 text-center ml-3">
-          <h5>Clarified Vision & Target</h5>
-          <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ab.</h6>
-          
-  
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 p-5 text-center ml-3">
-          <h5>High Performance</h5>
-          <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ab.</h6>
-  
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 p-5 text-center ml-3">
-          <h5>Maintain Security</h5>
-          <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ab.</h6>
-  
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 p-5 text-center ml-3">
-          <h5>Better Strategy & Quality</h5>
-          <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ab.</h6>
-  
-        </div>
-        
-  
-        </div>
-        
-        
-  
-  
-      </div>
-  </div>  
+  </div>
 
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="row align-items-center">
+      <div class="col-lg-3 col-md-3 col-sm-6 p-5 text-center ml-3">
+        <i class="fa-solid fa-crosshairs fa-5x"></i>
+        <h5>Clarified Vision & Target</h5>
+        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ab.</h6>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 p-5 text-center ml-3">
+        <i class="fa-solid fa-gauge-high fa-5x"></i>
+        <h5>High Performance</h5>
+        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ab.</h6>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 p-5 text-center ml-3">
+        <i class="fa-solid fa-shield-halved fa-5x"></i>
+        <h5>Maintain Security</h5>
+        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ab.</h6>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 p-5 text-center ml-3">
+        <i class="fa-solid fa-arrows-to-circle fa-5x"></i>
+        <h5>Better Strategy & Quality</h5>
+        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ab.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="row align-items-center">
+      <div class="col-lg-12 col-md-12 col-sm-12 p-5 text-center ml-3">
+        <h4 class="text-danger">OUR PROJECT</h4>
+        <h2>WHY WE ARE BEST</h2>
+      </div>
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row align-items-center">
+          <div class="col-lg-8 col-md-8 col-sm-6 p-5 text-center ml-3">
+            <img id="projectImage" src="Images/pImage1.png" alt="Project Image" class="img-fluid">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 p-5 text-center ml-3 bg-light">
+            <div class="row highlight-row" onclick="displayProjectImage(1)">
+              <h3>Genderless Japan</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt asperiores quod neque odio tempora
+                voluptatum?</p>
+            </div>
+            <div class="row highlight-row" onclick="displayProjectImage(2)">
+              <h3>Strategy & Quality</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt asperiores quod neque odio tempora
+                voluptatum?</p>
+            </div>
+            <div class="row highlight-row" onclick="displayProjectImage(3)">
+              <h3>Genderless kei Japan</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt asperiores quod neque odio tempora
+                voluptatum?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="row align-items-center">
+      <div class="col-lg-12 col-md-12 col-sm-12 p-5 text-center ml-3">
+        <h4 class="text-danger">EXPERTS GROWTH</h4>
+        <h2>OUR COMPANY GROWTH</h2>
+      </div>
+    </div>
+  </div>
+
+  <div id="cardContainer2" class="container d-flex justify-content-center">
+    <div class="card justify-content-center text-center mt-6" style="width: 18rem; margin-right: 5px;">
+      <i class="fa-solid fa-heart fa-2xl mt-5 mb-3" style="color: #f02d34;"></i>
+      <h2>199+</h2>
+      <p>Satisfied Customers</p>
+    </div>
+    <div class="card justify-content-center text-center" style="width: 18rem;margin-right: 5px;">
+      <i class="fa-solid fa-clock fa-2xl mt-5 mb-3" style="color: #f02d34;"></i>
+      <h2>1599+</h2>
+      <p>Satisfied Customers</p>
+    </div>
+    <div class="card justify-content-center text-center" style="width: 18rem;margin-right: 5px;">
+      <i class="fa-solid fa-circle-check fa-2xl mt-5 mb-3" style="color: #f02d34;"></i>
+      <h2>283+</h2>
+      <p>Complete Projects</p>
+    </div>
+    <div class="card justify-content-center text-center" style="width: 18rem;margin-right: 5px;">
+      <i class="fa-solid fa-trophy fa-2xl mt-5 mb-3" style="color: #f02d34;"></i>
+      <h2>75+</h2>
+      <p>Win Awards</p>
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="row align-items-center">
+      <div class="col-lg-12 col-md-12 col-sm-12 p-5 text-center ml-3 bg-light-subtle">
+        <h4 class="text-danger">CLIENTS FEEDBACK</h4>
+        <h2>PEOPLE SAYS ABOUT US</h2>
+        <p><span class="text-danger" style="font-weight: bold;">Joseph Clark:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur nesciunt,
+          molestias consequuntur modi sit.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-center align-items-center bg-danger p-5">
+    <img src="Images/footer.png" alt="Footer Image" class="img-fluid">
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/962f45b7bf.js" crossorigin="anonymous"></script>
+  <script>
+    // function to change image on  click
+    function displayProjectImage(projectNumber) {
+      var imageName = 'pImage' + projectNumber + '.png';
+      document.getElementById('projectImage').src = 'Images/' + imageName;
+    }
+  </script>
 </body>
 
 </html>

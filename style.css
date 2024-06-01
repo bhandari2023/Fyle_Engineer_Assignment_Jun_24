@@ -18,5 +18,34 @@
 }
 .carousel-indicators [data-bs-target].active {
     background-color: #030303; /* Active color */
-    box-shadow: 0 0 0 1px #ed4b69;
+    box-shadow: 0 0 0 1px #f66d86;
+  }
+  .highlight-row:hover {
+    background-color: #fd7979; /* Change the background color on hover */
+    border-radius: 10px;
+  }
+
+  #projectImage {
+    width: 500px; /* Set the width to 100% of its container */
+    height: 500px; /* Maintain aspect ratio */
+    border: 5px solid transparent; 
+  }
+  .custom-col {
+   
+    border-radius: 10px;
+
+  }
+  @media (min-width: 576px) {
+    .custom-col {
+      margin-right: 2px; /* Adjust as needed */
+    }
+  }
+  @media (max-width: 575.98px) {
+    .custom-col {
+      margin-bottom: 10px; /* Add margin between rows on small screens */
+    }
+  }
+  #cardContainer2 .card:hover{
+    background-color: #f3dada; /* Change the background color on hover */
+    border-radius: 10px;
   }
